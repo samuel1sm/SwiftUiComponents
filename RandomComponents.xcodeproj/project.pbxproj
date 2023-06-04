@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8940F37B2BE5120B00B3711F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940F37A2BE5120B00B3711F /* CalendarView.swift */; };
+		8940F37E2BE5209B00B3711F /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940F37D2BE5209B00B3711F /* CalendarViewModel.swift */; };
+		8940F3802BE55B1600B3711F /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940F37F2BE55B1600B3711F /* Array+Extensions.swift */; };
 		8959CAC72A2BC938006718B7 /* RandomComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959CAC62A2BC938006718B7 /* RandomComponentsApp.swift */; };
 		8959CAC92A2BC938006718B7 /* AllComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959CAC82A2BC938006718B7 /* AllComponentsView.swift */; };
 		8959CACB2A2BC939006718B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8959CACA2A2BC939006718B7 /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8940F37A2BE5120B00B3711F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		8940F37D2BE5209B00B3711F /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		8940F37F2BE55B1600B3711F /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		8959CAC32A2BC938006718B7 /* RandomComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8959CAC62A2BC938006718B7 /* RandomComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomComponentsApp.swift; sourceTree = "<group>"; };
 		8959CAC82A2BC938006718B7 /* AllComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllComponentsView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8940F37C2BE5206900B3711F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8940F37A2BE5120B00B3711F /* CalendarView.swift */,
+				8940F37D2BE5209B00B3711F /* CalendarViewModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		8959CABA2A2BC938006718B7 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				8959CAF12A2BCD18006718B7 /* View+Extensions.swift */,
+				8940F37F2BE55B1600B3711F /* Array+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				8959CAF42A2BF459006718B7 /* ExpandableView.swift */,
+				8940F37C2BE5206900B3711F /* Calendar */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -280,9 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8959CAC92A2BC938006718B7 /* AllComponentsView.swift in Sources */,
+				8940F37B2BE5120B00B3711F /* CalendarView.swift in Sources */,
 				8959CAF22A2BCD18006718B7 /* View+Extensions.swift in Sources */,
+				8940F3802BE55B1600B3711F /* Array+Extensions.swift in Sources */,
 				8959CAF52A2BF459006718B7 /* ExpandableView.swift in Sources */,
 				8959CAC72A2BC938006718B7 /* RandomComponentsApp.swift in Sources */,
+				8940F37E2BE5209B00B3711F /* CalendarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

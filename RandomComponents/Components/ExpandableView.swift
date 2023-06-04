@@ -1,11 +1,14 @@
 import SwiftUI
 
 struct ExpandableView<Content: View>: View {
-	@State var isShowing = false
 	
+	@Binding var isShowing: Bool
+	var title: String
 	var content: Content
 	
-	init(@ViewBuilder content: () -> Content) {
+	init(isShowing: Binding<Bool>,title: String, @ViewBuilder content: () -> Content) {
+		self._isShowing = isShowing
+		self.title = title
 		self.content = content()
 	}
 	
@@ -16,7 +19,7 @@ struct ExpandableView<Content: View>: View {
 					isShowing.toggle()
 				}) {
 					HStack {
-						Text("Teste")
+						Text(title)
 						Spacer()
 						Image(systemName: "arrow.down")
 							.rotationEffect(isShowing ? Angle(degrees: 180) : .zero)
@@ -43,10 +46,12 @@ struct ExpandableView<Content: View>: View {
 
 
 struct ExpandableViewTestView: View {
+	
+	@State var isShowing: Bool = true
 
 	var body: some View {
 		VStack {
-			ExpandableView {
+			ExpandableView(isShowing: $isShowing, title: "Option 1") {
 				VStack {
 					Text("dasdas")
 					Image(systemName: "globe")
