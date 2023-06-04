@@ -8,4 +8,8 @@ extension View {
 				.stroke(strokeColor, lineWidth: lineWidth)
 		)
 	}
+	
+	func backgroundColor(_ color: Color) -> some View {
+		self.background(color)
+	}
 }

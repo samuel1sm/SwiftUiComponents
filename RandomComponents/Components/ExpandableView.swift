@@ -15,17 +15,16 @@ struct ExpandableView<Content: View>: View {
 				Button(action: {
 					isShowing.toggle()
 				}) {
-					VStack {
-						HStack {
-							Text("Teste")
-							Spacer()
-							Image(systemName: "arrow.down")
-								.rotationEffect(isShowing ? Angle(degrees: 180) : .zero)
-							
-						}
-						.padding(.init(top: 16, leading: 16, bottom: 16, trailing: 16))
+					HStack {
+						Text("Teste")
+						Spacer()
+						Image(systemName: "arrow.down")
+							.rotationEffect(isShowing ? Angle(degrees: 180) : .zero)
+						
 					}
-				}.background(.white)
+					.padding(.init(top: 16, leading: 16, bottom: 16, trailing: 16))
+				}
+				.backgroundColor(.white)
 			}
 			.foregroundColor(.black)
 			.zIndex(1)
